@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TopicsViewController: UIViewController {
+class TopicsViewController: UIViewController, UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
