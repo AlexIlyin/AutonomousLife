@@ -18,6 +18,7 @@
 		271FDBA7217482B8004D5A2C /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FDBA6217482B8004D5A2C /* TopicsViewController.swift */; };
 		271FDBAA217482E4004D5A2C /* FavouriteTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FDBA9217482E4004D5A2C /* FavouriteTopicsViewController.swift */; };
 		271FDBAD21748313004D5A2C /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FDBAC21748313004D5A2C /* StoryViewController.swift */; };
+		6B88B91B2175F1A10061C66B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B88B91A2175F1A10061C66B /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		271FDBA6217482B8004D5A2C /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
 		271FDBA9217482E4004D5A2C /* FavouriteTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTopicsViewController.swift; sourceTree = "<group>"; };
 		271FDBAC21748313004D5A2C /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		6B88B91A2175F1A10061C66B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				271FDBA6217482B8004D5A2C /* TopicsViewController.swift */,
+				6B88B91A2175F1A10061C66B /* CustomCell.swift */,
 			);
 			path = Topics;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				271FDBA7217482B8004D5A2C /* TopicsViewController.swift in Sources */,
 				271FDBAA217482E4004D5A2C /* FavouriteTopicsViewController.swift in Sources */,
 				271FDBA421748297004D5A2C /* CategoriesViewController.swift in Sources */,
+				6B88B91B2175F1A10061C66B /* CustomCell.swift in Sources */,
 				271FDBAD21748313004D5A2C /* StoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,7 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V7LZTG368T;
+				DEVELOPMENT_TEAM = 37487TJ5T2;
 				INFOPLIST_FILE = AutonomousLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,7 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V7LZTG368T;
+				DEVELOPMENT_TEAM = 37487TJ5T2;
 				INFOPLIST_FILE = AutonomousLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
