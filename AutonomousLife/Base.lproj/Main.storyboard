@@ -53,28 +53,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpM-60-kfx">
-                                <rect key="frame" x="268" y="30" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Story"/>
-                                <connections>
-                                    <action selector="showStory:" destination="wsp-rR-xE1" eventType="touchUpInside" id="HYH-f5-7Ms"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s10-QP-AQD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s10-QP-AQD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="Z83-AM-HNJ" customClass="CustomCell" customModule="AutonomousLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z83-AM-HNJ" id="NCu-79-7XS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0Z-TP-IWA">
+                                                    <rect key="frame" x="15" y="11" width="213" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="v0Z-TP-IWA" secondAttribute="height" multiplier="71:7" id="5mF-vY-AeM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsq-aD-63w">
+                                                    <rect key="frame" x="15" y="40" width="345" height="39"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Vsq-aD-63w" secondAttribute="height" multiplier="115:13" id="m27-PJ-zQd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpM-60-kfx">
+                                                    <rect key="frame" x="276" y="30" width="46" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Story"/>
+                                                    <connections>
+                                                        <action selector="showStory:" destination="wsp-rR-xE1" eventType="touchUpInside" id="HYH-f5-7Ms"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="v0Z-TP-IWA" firstAttribute="leading" secondItem="NCu-79-7XS" secondAttribute="leadingMargin" id="01l-OR-WJX"/>
+                                                <constraint firstItem="Vsq-aD-63w" firstAttribute="top" secondItem="v0Z-TP-IWA" secondAttribute="bottom" constant="8" id="7Yd-Qp-elu"/>
+                                                <constraint firstItem="Vsq-aD-63w" firstAttribute="bottom" secondItem="NCu-79-7XS" secondAttribute="bottomMargin" id="7pL-De-rTH"/>
+                                                <constraint firstItem="Vsq-aD-63w" firstAttribute="leading" secondItem="NCu-79-7XS" secondAttribute="leadingMargin" id="ITj-xg-RW1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="v0Z-TP-IWA" secondAttribute="trailing" constant="132" id="OuE-Ap-0GC"/>
+                                                <constraint firstItem="Vsq-aD-63w" firstAttribute="trailing" secondItem="NCu-79-7XS" secondAttribute="trailingMargin" id="Zu4-W0-7Bc"/>
+                                                <constraint firstItem="v0Z-TP-IWA" firstAttribute="top" secondItem="NCu-79-7XS" secondAttribute="topMargin" id="eq7-kK-NBj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="v0Z-TP-IWA" secondAttribute="bottom" constant="47" id="vy4-mf-YJY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myDescription" destination="Vsq-aD-63w" id="cQH-XD-J78"/>
+                                            <outlet property="myTitle" destination="v0Z-TP-IWA" id="pEZ-UX-fqV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="wsp-rR-xE1" id="0Ky-dI-Dod"/>
                                     <outlet property="delegate" destination="wsp-rR-xE1" id="ZEg-Ne-CCI"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Finance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agO-pN-gz1">
+                                <rect key="frame" x="150" y="35" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GuW-bE-Kkf"/>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="s10-QP-AQD" id="NkA-Ve-zVg"/>
                         <segue destination="R4P-K8-0QP" kind="showDetail" identifier="Show Story" id="s7f-Tc-C8Z"/>
                     </connections>
                 </viewController>

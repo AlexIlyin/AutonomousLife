@@ -2,39 +2,24 @@
 //  CustomCell.swift
 //  AutonomousLife
 //
-//  Created by Di Monda Davide on 16/10/2018.
+//  Created by Di Monda Davide on 17/10/2018.
 //  Copyright © 2018 Alex Ilyin. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class CustomCell : UITableViewCell{
-    var message : String?
-    var mainImage : UIImage?
-    var messageView : UITextView = {
-        
-        var textView = UITextView()
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        return textView
-        
-    }()
-    var mainImageView : UIImageView = {
-        
-        var imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
-    }()
+class CustomCell: UITableViewCell {
+
     
+    @IBOutlet weak var myTitle: UILabel!
+    @IBOutlet weak var myDescription: UILabel!
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override func awakeFromNib() {
+        super.awakeFromNib()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
     }
-    
+
 }
-
-
