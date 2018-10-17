@@ -9,15 +9,26 @@
 import UIKit
 
 class CategoriesViewController: UIViewController {
-
+    
+    var arg = String()
+    @IBOutlet weak var Finance: UIButton!
+    @IBOutlet weak var Home: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Finance.setTitle("Finance", for: .normal)
+        Home.setTitle("Home", for: .normal)
         // Do any additional setup after loading the view.
     }
     
     @IBAction func showTopics(_ sender: UIButton) {
+        arg = sender.title(for: .normal) ?? "buttom"
         performSegue(withIdentifier: "Show Topics", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var secondController = segue.destination as! TopicsViewController
+        secondController.topic = arg
     }
     
     /*
