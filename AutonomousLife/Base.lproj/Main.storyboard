@@ -27,7 +27,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbZ-Yh-J2e">
                                 <rect key="frame" x="169" y="369" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Topic"/>
+                                <state key="normal" title="Finanace"/>
                                 <connections>
                                     <action selector="showTopics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zqs-xx-Tmz"/>
                                 </connections>
@@ -35,9 +35,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dB-Gv-5kC">
                                 <rect key="frame" x="166" y="251" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Home"/>
                                 <connections>
                                     <action selector="showTopics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w3Q-9q-NIE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLW-XM-SZZ">
+                                <rect key="frame" x="212" y="181" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Edu"/>
+                                <connections>
+                                    <action selector="showTopics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byE-qR-Onw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,6 +54,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="s6Z-Ei-QLU"/>
                     <connections>
+                        <outlet property="Edu" destination="mLW-XM-SZZ" id="qAu-JJ-tuB"/>
                         <outlet property="Finance" destination="hbZ-Yh-J2e" id="HYd-lu-MIv"/>
                         <outlet property="Home" destination="4dB-Gv-5kC" id="kGX-Ui-P24"/>
                         <segue destination="wsp-rR-xE1" kind="show" identifier="Show Topics" id="nB9-ue-7oO"/>
@@ -89,9 +98,6 @@
                                                         <constraint firstAttribute="width" secondItem="YpM-60-kfx" secondAttribute="height" multiplier="23:20" id="oQP-kT-QvE"/>
                                                     </constraints>
                                                     <state key="normal" title="Fav" image="love1"/>
-                                                    <connections>
-                                                        <action selector="showStory:" destination="wsp-rR-xE1" eventType="touchUpInside" id="HYH-f5-7Ms"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0Z-TP-IWA">
                                                     <rect key="frame" x="15" y="10" width="213" height="21"/>

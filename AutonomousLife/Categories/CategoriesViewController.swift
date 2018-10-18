@@ -13,11 +13,13 @@ class CategoriesViewController: UIViewController {
     var arg = String()
     @IBOutlet weak var Finance: UIButton!
     @IBOutlet weak var Home: UIButton!
+    @IBOutlet weak var Edu: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Finance.setTitle("Finance", for: .normal)
         Home.setTitle("Home", for: .normal)
+        Edu.setTitle("Edu", for: .normal)
         // Do any additional setup after loading the view.
     }
     
