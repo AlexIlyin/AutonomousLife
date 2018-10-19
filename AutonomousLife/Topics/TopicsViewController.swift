@@ -89,16 +89,17 @@ class TopicsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             color1 = colorFinance1
             color2 = colorFinance2
             colorBack = colorFinanaceBack
+//          CHANGE MYTITLE AND MYDESCRIPTION
             self.navigationItem.title = "Finance"
 
-        }else if(topic == "Home"){
+        }else if(topic == "Household"){
             
             color1 = colorHome1
             color2 = colorHome2
             colorBack = colorHomeBack
-            self.navigationItem.title = "Home"
+            self.navigationItem.title = "Household"
             
-        }else if(topic == "Edu"){
+        }else if(topic == "Education"){
             
             color1 = colorEdu1
             color2 = colorEdu2
@@ -130,6 +131,8 @@ class TopicsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     }
     
+    
+    //    MARK: BUTTOM FUNC
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
          performSegue(withIdentifier: "Show Story", sender: self)
     }

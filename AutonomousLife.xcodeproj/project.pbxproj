@@ -19,6 +19,7 @@
 		271FDBAA217482E4004D5A2C /* FavouriteTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FDBA9217482E4004D5A2C /* FavouriteTopicsViewController.swift */; };
 		271FDBAD21748313004D5A2C /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FDBAC21748313004D5A2C /* StoryViewController.swift */; };
 		6B20EB702177194000AEEB33 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B20EB6F2177194000AEEB33 /* CustomCell.swift */; };
+		6B7A99E42179C70200D1CEC8 /* Topics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7A99E22179C70200D1CEC8 /* Topics.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		271FDBA9217482E4004D5A2C /* FavouriteTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTopicsViewController.swift; sourceTree = "<group>"; };
 		271FDBAC21748313004D5A2C /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		6B20EB6F2177194000AEEB33 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		6B7A99E32179C70200D1CEC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AutonomousLife/Base.lproj/Topics.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		271FDBA8217482BD004D5A2C /* Topics */ = {
 			isa = PBXGroup;
 			children = (
+				6B7A99E22179C70200D1CEC8 /* Topics.storyboard */,
 				271FDBA6217482B8004D5A2C /* TopicsViewController.swift */,
 				6B20EB6F2177194000AEEB33 /* CustomCell.swift */,
 			);
@@ -278,6 +281,7 @@
 			files = (
 				271FDB782174788A004D5A2C /* LaunchScreen.storyboard in Resources */,
 				271FDB752174788A004D5A2C /* Assets.xcassets in Resources */,
+				6B7A99E42179C70200D1CEC8 /* Topics.storyboard in Resources */,
 				271FDB7321747889004D5A2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +363,14 @@
 				271FDB772174788A004D5A2C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6B7A99E22179C70200D1CEC8 /* Topics.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B7A99E32179C70200D1CEC8 /* Base */,
+			);
+			name = Topics.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
